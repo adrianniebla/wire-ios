@@ -59,6 +59,7 @@ class AuthenticationEventResponderChain {
         case flowStart(NSError?, Int)
         case initialSyncCompleted
         case backupReady(Bool)
+        case passcodeCreated
         case clientRegistrationError(NSError, UUID)
         case clientRegistrationSuccess
         case authenticationFailure(NSError)
@@ -90,6 +91,7 @@ class AuthenticationEventResponderChain {
     var flowStartHandlers: [AnyAuthenticationEventHandler<(NSError?, Int)>] = []
     var initialSyncHandlers: [AnyAuthenticationEventHandler<Void>] = []
     var backupEventHandlers: [AnyAuthenticationEventHandler<Bool>] = []
+    var passcodeSetupEventHandlers: [AnyAuthenticationEventHandler<(Void)>] = []
     var clientRegistrationErrorHandlers: [AnyAuthenticationEventHandler<(NSError, UUID)>] = []
     var clientRegistrationSuccessHandlers: [AnyAuthenticationEventHandler<Void>] = []
     var loginErrorHandlers: [AnyAuthenticationEventHandler<NSError>] = []
@@ -122,6 +124,9 @@ class AuthenticationEventResponderChain {
 
         // initialSyncHandlers
         registerHandler(AuthenticationInitialSyncEventHandler(), to: &initialSyncHandlers)
+
+        // passcode setup Handlers
+        registerHandler(AuthenticationPasscodeSetupEventHandler(), to: &passcodeSetupEventHandlers)
 
         // clientRegistrationErrorHandlers
         registerHandler(AuthenticationClientLimitErrorHandler(), to: &clientRegistrationErrorHandlers)
@@ -212,6 +217,8 @@ class AuthenticationEventResponderChain {
             handleEvent(with: userProfileChangeObservers, context: changeInfo)
         case .userInput(let value):
             handleEvent(with: userInputObservers, context: value)
+        case .passcodeCreated:
+            handleEvent(with: passcodeSetupEventHandlers, context: ())
         }
     }
 
