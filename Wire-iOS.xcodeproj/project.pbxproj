@@ -778,6 +778,7 @@
 		A972840A2384247D00AFEFC6 /* BackupExcluderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97284072384244E00AFEFC6 /* BackupExcluderTests.swift */; };
 		A978D993236C587B00B568AE /* ZMUserSession+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A978D992236C587B00B568AE /* ZMUserSession+Shared.swift */; };
 		A97BC011241EA2660069E145 /* NSAttributedString+EnumerateAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BC010241EA2650069E145 /* NSAttributedString+EnumerateAttachment.swift */; };
+		A97CC15A24DCA60400A6328C /* AuthenticationPasscodeSetupEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CC15924DCA60400A6328C /* AuthenticationPasscodeSetupEventHandler.swift */; };
 		A97FA6FC23B57067005257A8 /* StartUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA6FB23B57067005257A8 /* StartUIViewController.swift */; };
 		A97FA6FE23B5883A005257A8 /* StartUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA6FD23B5883A005257A8 /* StartUIDelegate.swift */; };
 		A9806A3B23E2024E00691DFE /* AudioTrackPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9806A3A23E2024E00691DFE /* AudioTrackPlayer.swift */; };
@@ -2397,6 +2398,7 @@
 		A97284072384244E00AFEFC6 /* BackupExcluderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupExcluderTests.swift; sourceTree = "<group>"; };
 		A978D992236C587B00B568AE /* ZMUserSession+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZMUserSession+Shared.swift"; sourceTree = "<group>"; };
 		A97BC010241EA2650069E145 /* NSAttributedString+EnumerateAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+EnumerateAttachment.swift"; sourceTree = "<group>"; };
+		A97CC15924DCA60400A6328C /* AuthenticationPasscodeSetupEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPasscodeSetupEventHandler.swift; sourceTree = "<group>"; };
 		A97FA6FB23B57067005257A8 /* StartUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUIViewController.swift; sourceTree = "<group>"; };
 		A97FA6FD23B5883A005257A8 /* StartUIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUIDelegate.swift; sourceTree = "<group>"; };
 		A9806A3A23E2024E00691DFE /* AudioTrackPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrackPlayer.swift; sourceTree = "<group>"; };
@@ -3847,6 +3849,7 @@
 		5E8DA756211B04EA00360979 /* Post-Login */ = {
 			isa = PBXGroup;
 			children = (
+				A97CC15824DCA5D300A6328C /* Passcode */,
 				5E65A7A121304120008BFCC0 /* UserChange */,
 				5E8DA766211B2D8300360979 /* Success */,
 				5E8DA760211B285500360979 /* Backup */,
@@ -5602,6 +5605,14 @@
 			path = Backup;
 			sourceTree = "<group>";
 		};
+		A97CC15824DCA5D300A6328C /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				A97CC15924DCA60400A6328C /* AuthenticationPasscodeSetupEventHandler.swift */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
 		A984AAE424099239002CFF2E /* LinkOpeningOption */ = {
 			isa = PBXGroup;
 			children = (
@@ -7335,6 +7346,7 @@
 				EEAC0A1421AD898200BE5F5D /* ConversationCreateNameCell.swift in Sources */,
 				162836142016574D0027082D /* ProcessInfo+Tests.swift in Sources */,
 				8736F1C21E4DCEB8001CBA62 /* AppLockViewController.swift in Sources */,
+				A97CC15A24DCA60400A6328C /* AuthenticationPasscodeSetupEventHandler.swift in Sources */,
 				63256D8224D46456009FC58B /* BitRateLabel.swift in Sources */,
 				EFA820AE2019075400FED370 /* UIViewController+addViewController.swift in Sources */,
 				EFEC7D9B2362011E0003CF33 /* MessageAction.swift in Sources */,
