@@ -90,6 +90,7 @@ indirect enum AuthenticationFlowStep: Equatable {
     /// Whether the step can be unwinded.
     var allowsUnwind: Bool {
         switch self {
+        case .passcodeSetup: return false
         case .landingScreen: return false
         case .clientManagement: return false
         case .noHistory: return false
