@@ -806,6 +806,8 @@
 		A9A6506224D1857D00B6A68D /* TransparentNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6506124D1857C00B6A68D /* TransparentNavigationBar.swift */; };
 		A9A6506424D1C2C800B6A68D /* PasscodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6506324D1C2C800B6A68D /* PasscodeError.swift */; };
 		A9A6506624D1C32300B6A68D /* PasscodeValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6506524D1C32300B6A68D /* PasscodeValidationResult.swift */; };
+		A9AA81CF24DD474200F44840 /* AuthenticationCoordinator+PasscodeSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AA81CE24DD474200F44840 /* AuthenticationCoordinator+PasscodeSetup.swift */; };
+		A9AA81D224DD484A00F44840 /* AuthenticationPasscodeSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AA81D124DD484A00F44840 /* AuthenticationPasscodeSetupViewController.swift */; };
 		A9AC63E123FC4A2D00016ABC /* AVURLAsset+conversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC63E023FC4A2D00016ABC /* AVURLAsset+conversionTests.swift */; };
 		A9BA580D2497994D005B806B /* ContextMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA580C2497994D005B806B /* ContextMenuDelegate.swift */; };
 		A9C3223F23EB200F00E17311 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3223E23EB200E00E17311 /* CountryCell.swift */; };
@@ -2425,6 +2427,8 @@
 		A9A6506124D1857C00B6A68D /* TransparentNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentNavigationBar.swift; sourceTree = "<group>"; };
 		A9A6506324D1C2C800B6A68D /* PasscodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeError.swift; sourceTree = "<group>"; };
 		A9A6506524D1C32300B6A68D /* PasscodeValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeValidationResult.swift; sourceTree = "<group>"; };
+		A9AA81CE24DD474200F44840 /* AuthenticationCoordinator+PasscodeSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationCoordinator+PasscodeSetup.swift"; sourceTree = "<group>"; };
+		A9AA81D124DD484A00F44840 /* AuthenticationPasscodeSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPasscodeSetupViewController.swift; sourceTree = "<group>"; };
 		A9AC63E023FC4A2D00016ABC /* AVURLAsset+conversionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVURLAsset+conversionTests.swift"; sourceTree = "<group>"; };
 		A9B02231209B6E4E00DF25D8 /* AppCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenter.swift; sourceTree = "<group>"; };
 		A9BA580C2497994D005B806B /* ContextMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuDelegate.swift; sourceTree = "<group>"; };
@@ -3755,6 +3759,7 @@
 		5E65A7A8213054B1008BFCC0 /* Coordinator+Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				A9AA81CE24DD474200F44840 /* AuthenticationCoordinator+PasscodeSetup.swift */,
 				5EE73BF4212419ED0032986D /* AuthenticationCoordinator+Registration.swift */,
 				5E8DA787211C499900360979 /* AuthenticationCoordinator+PreLogin.swift */,
 				5E8DA764211B2D0400360979 /* AuthenticationCoordinator+PostLogin.swift */,
@@ -5577,6 +5582,7 @@
 		A96E802F24CB2A760010CD80 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				A9AA81D024DD481B00F44840 /* Authentication */,
 				A9A3B1FF24DAAD01001AF38E /* PasscodeKeychainItem.swift */,
 				A9A6506324D1C2C800B6A68D /* PasscodeError.swift */,
 				A9A6506524D1C32300B6A68D /* PasscodeValidationResult.swift */,
@@ -5635,6 +5641,14 @@
 				A9A3B1FB24D9B1E1001AF38E /* WireLogoInfoView.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		A9AA81D024DD481B00F44840 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A9AA81D124DD484A00F44840 /* AuthenticationPasscodeSetupViewController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		A9AC63DF23FC4A0E00016ABC /* AVAsset */ = {
@@ -7801,6 +7815,7 @@
 				BD979D2C1D8F3AF700E8E3CB /* SettingsTechnicalReportViewController.swift in Sources */,
 				87DCF49D1D34E9E600BB420F /* MapKit+Helper.swift in Sources */,
 				BFA25DC11D9976B60086DEBD /* LinkInteractionTextView.swift in Sources */,
+				A9AA81D224DD484A00F44840 /* AuthenticationPasscodeSetupViewController.swift in Sources */,
 				EF2CF3262243EBAC003E16BC /* AppDelegate+URL.swift in Sources */,
 				870C97C31D670C9A00F6FD7D /* NextResponderTextView.swift in Sources */,
 				874D0EB31D3E6D77003DF418 /* ConversationInputBarViewController+Camera.swift in Sources */,
@@ -7928,6 +7943,7 @@
 				166390D61DC8AC0C00D7BF1C /* String+Image.swift in Sources */,
 				A90E4AC42381EFCD00468F31 /* Button.swift in Sources */,
 				87DCF49B1D34E9E600BB420F /* LocationSelectionViewController.swift in Sources */,
+				A9AA81CF24DD474200F44840 /* AuthenticationCoordinator+PasscodeSetup.swift in Sources */,
 				871067431C0DC78F0035603B /* SettingsExternalScreenCellDescriptor.swift in Sources */,
 				EF282B92228AF9790042D6C5 /* RequestPasswordController.swift in Sources */,
 				EF2127281FB9E06300625A9B /* LandingViewController.swift in Sources */,

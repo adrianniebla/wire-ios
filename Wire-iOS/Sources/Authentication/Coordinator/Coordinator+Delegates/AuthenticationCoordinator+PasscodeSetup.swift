@@ -17,13 +17,10 @@
 //
 
 import Foundation
-final class AuthenticationPasscodeSetupEventHandler: AuthenticationEventHandler {
-    
-    weak var statusProvider: AuthenticationStatusProvider?
-    
-    func handleEvent(currentStep: AuthenticationFlowStep, context: Void) -> [AuthenticationCoordinatorAction]? {
-        
-        return nil //TODO: complete, start client management?
+
+extension AuthenticationCoordinator: PasscodeSetupViewControllerDelegate {
+    func passcodeSetupViewControllerDidComplete() {
+        eventResponderChain.handleEvent(ofType: .passcodeCreated)
+
     }
-    
 }
