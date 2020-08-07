@@ -24,7 +24,20 @@ protocol PasscodeSetupUserInterface: class {
     func setValidationLabelsState(errorReason: PasscodeError, passed: Bool)
 }
 
+//TODO: subclass PasscodeSetupViewController and extension
+extension PasscodeSetupViewController: AuthenticationCoordinatedViewController {
+    func executeErrorFeedbackAction(_ feedbackAction: AuthenticationErrorFeedbackAction) {
+        //no-op
+    }
+    
+    func displayError(_ error: Error) {
+        //no-op
+    }
+}
+
 final class PasscodeSetupViewController: UIViewController {
+    // MARK: AuthenticationCoordinatedViewController
+    weak var authenticationCoordinator: AuthenticationCoordinator?
 
     private lazy var presenter: PasscodeSetupPresenter = {
         return PasscodeSetupPresenter(userInterface: self)
