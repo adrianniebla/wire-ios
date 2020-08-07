@@ -237,6 +237,8 @@ extension AuthenticationCoordinator: AuthenticationActioner, SessionManagerCreat
     func executeActions(_ actions: [AuthenticationCoordinatorAction]) {
         for action in actions {
             switch action {
+            case .passcodeSetup:
+                startPasscodeSetup()
             case .showLoadingView:
                 presenter?.isLoadingViewVisible = true
 
@@ -565,6 +567,13 @@ extension AuthenticationCoordinator {
         stateController.transition(to: .createUser(unregisteredUser))
         registrationStatus.create(user: unregisteredUser)
     }
+    
+    // MARK: - passcode
+    
+    private func startPasscodeSetup() {
+        stateController.transition(to: .passcodeSetup)
+    }
+
 
     // MARK: - Post Registration
 

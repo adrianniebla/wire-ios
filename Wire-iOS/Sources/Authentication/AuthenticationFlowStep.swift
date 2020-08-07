@@ -82,6 +82,8 @@ indirect enum AuthenticationFlowStep: Equatable {
     case activateCredentials(UnverifiedCredentials, user: UnregisteredUser, code: String)
     case incrementalUserCreation(UnregisteredUser, IntermediateRegistrationStep)
     case createUser(UnregisteredUser)
+    
+    case passcodeSetup
 
     // MARK: - Properties
 
@@ -133,6 +135,8 @@ indirect enum AuthenticationFlowStep: Equatable {
         case .activateCredentials: return false
         case .incrementalUserCreation(_, let intermediateStep): return intermediateStep.needsInterface
         case .createUser: return false
+        case .passcodeSetup:
+            return true
         }
     }
 
