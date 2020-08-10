@@ -35,8 +35,22 @@ class AuthenticationButtonTapInputHandler: AuthenticationEventHandler {
         // Only handle input during specified steps.
         switch currentStep {
         case .noHistory:
-            return [.showLoadingView, .configureNotifications, .completeBackupStep,
-                .passcodeSetup] ///TODO: passcode step? check restored back up case, copy to other similar cases
+            // These steps need to be separated from presenting the passcode setup
+            // Otherwise the passcode setup view will have a loading view in the middle and will be dismissed after backup steps have completed
+            let backupActions: [AuthenticationCoordinatorAction] = [
+                .showLoadingView,
+                .configureNotifications,
+                .completeBackupStep
+            ]
+        
+            // No need to create a new AuthenticationCoordinatorAction if the only action is to transition.
+            // Transition can be passed as an action.
+            // .reset mode will ensure that there is no back arrow
+            let action = AuthenticationCoordinatorAction.transition(.passcodeSetup, mode: .reset)
+            
+            // Returning backup actions, but logic needs to be updated to integrate the passcode setup.
+            return backupActions
+        ///TODO: passcode step? check restored back up case, copy to other similar cases
         case .clientManagement(let clients, let credentials):
             let nextStep = AuthenticationFlowStep.deleteClient(clients: clients, credentials: credentials)
             return [AuthenticationCoordinatorAction.transition(nextStep, mode: .normal)]
