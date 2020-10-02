@@ -670,6 +670,7 @@
 "call.status.terminating" = "正在掛斷...";
 "call.status.constant_bitrate" = "固定位元率";
 "call.status.variable_bitrate" = "可變位元率";
+"call.status.conference_call" = "電話會議";
 
 "call.participants.show_all" = "全部顯示 (%@)";
 "call.participants.list.title" = "參與者";
@@ -1026,8 +1027,14 @@
 
 // Settings - Personal information
 "self.settings.privacy_analytics_section.title" = "使用資料和崩潰報告";
-"self.settings.privacy_analytics.title" = "寄送匿名資料";
-"self.settings.privacy_analytics_menu.description.title" = "發送匿名使用紀錄和崩潰報告以改善Wire。";
+
+// Crash
+"self.settings.privacy_crash.title" = "傳送匿名錯誤資料";
+"self.settings.privacy_crash_menu.description.title" = "Send anonymous crash reports and basic data like version number and operating system to help Wire identify and solve issues in the app.";
+
+// Analytics
+"self.settings.privacy_analytics.title" = "傳送匿名使用資料";
+"self.settings.privacy_analytics_menu.description.title" = "Usage data allows Wire to understand how the app is being used and how it can be improved. The data is anonymous and does not include the content of your communications (such as messages, files or calls).";
 
 "self.settings.receiveNews_and_offers.title" = "接收新聞";
 "self.settings.receiveNews_and_offers.description.title" = "接收Wire的新聞和產品更新電子郵件。";
@@ -1179,8 +1186,8 @@
 
 "self.settings.advanced.title" = "進階";
 "self.settings.advanced.conference_calling.title" = "電話會議";
-"self.settings.advanced.conference_calling.subtitle" = "啟用此選項後，將啟用音頻和視頻電話會議，從而允許更多的參與者。";
-"self.settings.advanced.conference_calling.toggle" = "測試計畫";
+"self.settings.advanced.conference_calling.subtitle" = "When this is on, audio and video conference calling is enabled, which allows a higher number of participants.";
+"self.settings.advanced.conference_calling.toggle" = "Beta Program";
 "self.settings.advanced.troubleshooting.title" = "疑難排解";
 "self.settings.advanced.troubleshooting.submit_debug.title" = "錯誤回報";
 "self.settings.advanced.debugging_tools.title" = "除錯工具";
@@ -1830,5 +1837,5 @@
 
 // Wipe database completion
 
-"wipe_database_completion.title" = "Database deleted";
+"wipe_database_completion.title" = "數據庫已刪除";
 "wipe_database_completion.subtitle" = "Your data and messages have been deleted. You can now log in again as a new device.";

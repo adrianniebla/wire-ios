@@ -670,6 +670,7 @@
 "call.status.terminating" = "Разъединение…";
 "call.status.constant_bitrate" = "Постоянный битрейт";
 "call.status.variable_bitrate" = "Переменный битрейт";
+"call.status.conference_call" = "Conference Calling";
 
 "call.participants.show_all" = "Показать все (%@)";
 "call.participants.list.title" = "Участники";
@@ -727,7 +728,7 @@
 "participants.section.services" = "Сервисы (%d)";
 "participants.section.settings" = "Настройки";
 "participants.footer.add_title" = "Добавить участников";
-"participants.section.name.footer" = "К групповой беседе может присоединиться до %1$d участников. Видеозвонки возможны между вами и еще %2$d участниками.";
+"participants.section.name.footer" = "Up to %1$d participants can join a group conversation. Video calls work with up to %2$d other people and you.";
 "participants.section.admins.footer" = "Здесь нет администраторов.";
 "participants.section.members.footer" = "Здесь нет участников.";
 
@@ -999,7 +1000,7 @@
 "self.settings.enable_read_receipts.title" = "Отправлять отчеты о прочтении";
 "self.settings.privacy_section_group.subtitle" = "При отключении этой настройки, вы не сможете видеть отчеты о прочтении от ваших собеседников.\n\nЭтот параметр не применяется к групповым беседам.";
 
-"self.settings.encrypt_messages_at_rest.title" = "Шифровать сообщения в режиме ожидания";
+"self.settings.encrypt_messages_at_rest.title" = "Encrypt messages at rest";
 
 "self.settings.account_picture_group.picture" = "Изображение";
 "self.settings.account_picture_group.color" = "Цвет";
@@ -1026,8 +1027,14 @@
 
 // Settings - Personal information
 "self.settings.privacy_analytics_section.title" = "Отчеты об использовании и сбоях";
-"self.settings.privacy_analytics.title" = "Отправлять анонимные данные";
-"self.settings.privacy_analytics_menu.description.title" = "Помогите сделать Wire лучше, отправляя анонимные отчеты об использовании и сбоях.";
+
+// Crash
+"self.settings.privacy_crash.title" = "Send anonymous crash data";
+"self.settings.privacy_crash_menu.description.title" = "Send anonymous crash reports and basic data like version number and operating system to help Wire identify and solve issues in the app.";
+
+// Analytics
+"self.settings.privacy_analytics.title" = "Send anonymous usage data";
+"self.settings.privacy_analytics_menu.description.title" = "Usage data allows Wire to understand how the app is being used and how it can be improved. The data is anonymous and does not include the content of your communications (such as messages, files or calls).";
 
 "self.settings.receiveNews_and_offers.title" = "Получать рассылку";
 "self.settings.receiveNews_and_offers.description.title" = "Получайте новости и обновления от Wire по электронной почте.";
@@ -1156,7 +1163,7 @@
 "self.settings.privacy_security.lock_app.subtitle.touch_id" = "Разблокируйте с помощью Touch ID или введите свой код доступа.";
 "self.settings.privacy_security.lock_app.subtitle.face_id" = "Разблокируйте с помощью Face ID или введите свой код доступа.";
 "self.settings.privacy_security.lock_app.subtitle.none" = "Для разблокировки введите свой код доступа.";
-"self.settings.privacy_security.lock_app.subtitle.custom_app_lock_reminder" = "Если вы забудете ваш код доступа, восстановить его будет невозможно.";
+"self.settings.privacy_security.lock_app.subtitle.custom_app_lock_reminder" = "If forgotten, your passcode can not be recovered.";
 
 "self.settings.privacy_security.lock_app.description" = "Разблокировать Wire";
 "self.settings.privacy_security.lock_password.description.unlock" = "Разблокировать с помощью пароля.";
@@ -1178,15 +1185,15 @@
 "self.settings.privacy.clear_history.subtitle" = "Это действие навсегда удалит контент всех ваших бесед.";
 
 "self.settings.advanced.title" = "Дополнительные настройки";
-"self.settings.advanced.conference_calling.title" = "Групповые звонки";
-"self.settings.advanced.conference_calling.subtitle" = "При включении этого параметра активируется возможность групповых аудио- и видеозвонков, что позволяет увеличить количество участников.";
-"self.settings.advanced.conference_calling.toggle" = "Бета-программа";
+"self.settings.advanced.conference_calling.title" = "Conference Calls";
+"self.settings.advanced.conference_calling.subtitle" = "When this is on, audio and video conference calling is enabled, which allows a higher number of participants.";
+"self.settings.advanced.conference_calling.toggle" = "Beta Program";
 "self.settings.advanced.troubleshooting.title" = "Устранение неполадок";
 "self.settings.advanced.troubleshooting.submit_debug.title" = "Отладочный отчет";
 "self.settings.advanced.debugging_tools.title" = "Средства отладки";
 "self.settings.advanced.debugging_tools.first_unread_conversation.title" = "Найти первую непрочитанную беседу";
-"self.settings.advanced.debugging_tools.show_user_id.title" = "Показать мой идентификатор пользователя";
-"self.settings.advanced.debugging_tools.enter_debug_command.title" = "Введите команду отладки";
+"self.settings.advanced.debugging_tools.show_user_id.title" = "Show my user ID";
+"self.settings.advanced.debugging_tools.enter_debug_command.title" = "Enter debug command";
 "self.settings.advanced.troubleshooting.submit_debug.subtitle" = "Эта информация помогает поддержке Wire диагностировать проблемы с вызовами и улучшать опыт использования приложения.";
 "self.settings.advanced.reset_push_token.title" = "Обновить токен push-уведомлений";
 "self.settings.advanced.reset_push_token.subtitle" = "При возникновении проблем с push-уведомлениями, служба поддержки Wire может попросить вас обновить токен.";
@@ -1257,10 +1264,10 @@
 // Landing screen
 
 "landing.header" = "Wire. Добавьте свой аккаунт.";
-"landing.welcome_message" = "Хотите создать учетную запись Pro или Enterprise для своего бизнеса или организации?";
-"landing.welcome_submessage" = "К сожалению, это невозможно в приложении - как только вы создадите свою команду, вы сможете авторизоваться здесь.";
-"landing.create_account.title" = "Создать персональный аккаунт Wire";
-"landing.create_account.infotitle" = "Поболтать с друзьями и семьей?";
+"landing.welcome_message" = "Trying to create a Pro or Enterprise account for your business or organization?";
+"landing.welcome_submessage" = "Unfortunately, that's not possible in the app - once you have created your team, you can log in here";
+"landing.create_account.title" = "Create a Wire personal account";
+"landing.create_account.infotitle" = "Chat with friends and family?";
 "landing.create_account.subtitle" = "Приватный чат с группами друзей\U00A0и\U00A0семьей";
 "landing.create_team.title" = "Pro";
 "landing.create_team.subtitle" = "Безопасная совместная работа для предприятий, учреждений и профессиональных\U00A0организаций";
@@ -1789,46 +1796,46 @@
 
 // Custom app lock
 
-"passcode.hint_label" = "Код доступа";
+"passcode.hint_label" = "Passcode";
 
 // Custom app lock - create passcode
 "create_passcode.textfield.placeholder" = "";
-"create_passcode.title_label" = "Создать код доступа";
-"create_passcode.info_label" = "Он будет использоваться для разблокировки Wire. Если вы забудете этот код доступа ";
-"create_passcode.info_label.highlighted" = "восстановить его будет невозможно.";
-"create_passcode.create_button.title" = "создать код доступа";
+"create_passcode.title_label" = "Create a passcode";
+"create_passcode.info_label" = "It will be used to unlock Wire. If you forget this passcode ";
+"create_passcode.info_label.highlighted" = "it can not be recovered.";
+"create_passcode.create_button.title" = "create passcode";
 
 // Custom app lock - create passcode validation
-"create_passcode.validation.too_short" = "Не менее восьми символов";
-"create_passcode.validation.no_lowercase_char" = "Строчная буква";
-"create_passcode.validation.no_uppercase_char" = "Заглавная буква";
-"create_passcode.validation.no_number" = "Цифра";
-"create_passcode.validation.no_special_char" = "Специальный символ";
+"create_passcode.validation.too_short" = "At least eight characters long";
+"create_passcode.validation.no_lowercase_char" = "A lowercase letter";
+"create_passcode.validation.no_uppercase_char" = "An uppercase letter";
+"create_passcode.validation.no_number" = "A number";
+"create_passcode.validation.no_special_char" = "A special character";
 
 // Custom app lock - unlock
-"unlock.textfield.placeholder" = "Введите код доступа";
-"unlock.title_label" = "Введите код доступа для разблокировки Wire";
-"unlock.wipe_button" = "Доступ как новое устройство";
-"unlock.error_label" = "Неверный код доступа";
-"unlock.submit_button.title" = "разблокировать";
+"unlock.textfield.placeholder" = "Enter your passcode";
+"unlock.title_label" = "Enter passcode to unlock Wire";
+"unlock.wipe_button" = "Access as new device";
+"unlock.error_label" = "Wrong passcode";
+"unlock.submit_button.title" = "unlock";
 
 // Wipe database
 
-"wipe_database.title_label" = "Доступ как новое устройство";
-"wipe_database.info_label" = "Доступ к данным, хранящимся на этом устройстве, возможен только с помощью вашего кода доступа.\n\nЕсли вы забыли свой код доступа, вы можете очистить базу данных для повторной авторизации в качестве нового устройства.\n\nПри удалении базы данных ";
-"wipe_database.info_label.highlighted" = "все локальные данные и сообщения этого аккаунта будут удалены навсегда.";
+"wipe_database.title_label" = "Access as new device";
+"wipe_database.info_label" = "The data stored on this device can only be accessed with your passcode.\n\nIf you have forgotten your passcode, you can delete the database to log in again as a new device.\n\nBy deleting the database, ";
+"wipe_database.info_label.highlighted" = "all local data and messages for this account will be permanently deleted.";
 
-"wipe_database.button.title" = "Я хочу удалить базу данных";
+"wipe_database.button.title" = "I want to delete the database";
 
 // Wipe database alert
 
-"wipe_database.alert.description" = "Подтвердить удаление базы данных";
-"wipe_database.alert.message" = "Введите 'Удалить', для подтверждения намерения удалить все данные с этого устройства.";
-"wipe_database.alert.placeholder" = "Введите 'Удалить'";
+"wipe_database.alert.description" = "Confirm database deletion";
+"wipe_database.alert.message" = "Type 'Delete' to verify you want to delete all data in this device.";
+"wipe_database.alert.placeholder" = "Type 'Delete'";
 "wipe_database.alert.confirm" = "Удалить";
 "wipe_database.alert.confirm_input" = "Удалить";
 
 // Wipe database completion
 
-"wipe_database_completion.title" = "База данных удалена";
-"wipe_database_completion.subtitle" = "Ваши данные и сообщения были удалены. Теперь вы можете повторно авторизоваться как новое устройство.";
+"wipe_database_completion.title" = "Database deleted";
+"wipe_database_completion.subtitle" = "Your data and messages have been deleted. You can now log in again as a new device.";
