@@ -195,7 +195,6 @@ final class AppRootViewController: UIViewController, SpinnerCapable {
             sessionManager.useConstantBitRateAudio = SecurityFlags.forceConstantBitRateCalls.isEnabled
                 ? true
                 : Settings.shared[.callingConstantBitRate] ?? false
-            sessionManager.useConferenceCalling = true
             sessionManager.start(launchOptions: launchOptions)
 
             self.quickActionsManager = QuickActionsManager(sessionManager: sessionManager,
