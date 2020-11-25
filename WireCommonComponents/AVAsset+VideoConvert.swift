@@ -47,7 +47,7 @@ extension AVAsset {
         exportSession.exportAsynchronously { [unowned exportSession] in
             switch exportSession.status {
             case .failed:
-                zmLog.error("Cannot transcode \(inPath) to \(outPath): \(String(describing: exportSession.error))")
+                zmLog.error("Cannot transcode \(inPath) to \(outPath): \(String(describing: exportSession.error))")///TODO: last log before crash meets here
                 DispatchQueue.main.async {
                     completion?(false)
                 }

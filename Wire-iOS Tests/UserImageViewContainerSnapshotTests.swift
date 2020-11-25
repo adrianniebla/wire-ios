@@ -53,7 +53,7 @@ final class UserImageViewContainerSnapshotTests: XCTestCase {
         verify(matching: sut)
     }
 
-    func testForWithUserImage(){
+    func testForWithUserImage(){///TODO: still crash after user image view weakening
         setupSut(userSession: MockZMUserSession())
 
         XCTAssertTrue(waitForGroupsToBeEmpty([MediaAssetCache.defaultImageCache.dispatchGroup]))

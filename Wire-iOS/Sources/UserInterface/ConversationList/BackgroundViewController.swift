@@ -24,7 +24,7 @@ import WireSyncEngine
 
 final class BackgroundViewController: UIViewController {
     
-    var dispatchGroup: DispatchGroup = DispatchGroup()
+    var dispatchGroup: DispatchGroup = DispatchGroup()///TODO: mem leak
     
     fileprivate let imageView = UIImageView()
     private let cropView = UIView()

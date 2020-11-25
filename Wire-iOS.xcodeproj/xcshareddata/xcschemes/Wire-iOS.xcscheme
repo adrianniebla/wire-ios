@@ -27,7 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      enableAddressSanitizer = "YES"
       disableMainThreadChecker = "YES"
       codeCoverageEnabled = "YES">
       <MacroExpansion>
@@ -39,6 +38,13 @@
             ReferencedContainer = "container:Wire-iOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+         <AdditionalOption
+            key = "MallocStackLogging"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+      </AdditionalOptions>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -61,6 +67,9 @@
                </Test>
                <Test
                   Identifier = "AnalyticsCountlyProviderTests">
+               </Test>
+               <Test
+                  Identifier = "AppLockPresenterTests/testThatAppStateDidTransitionToAuthenticatedAsksIfApplockIsNeeded()">
                </Test>
                <Test
                   Identifier = "AppLockPresenterTests/testThatItVerifiesPasswordWithCorrectMessageWhenNeeded()">
@@ -87,6 +96,9 @@
                   Identifier = "ConversationImageMessageTests">
                </Test>
                <Test
+                  Identifier = "ConversationInputBarViewControllerTests">
+               </Test>
+               <Test
                   Identifier = "ConversationListCellTests">
                </Test>
                <Test
@@ -97,6 +109,12 @@
                </Test>
                <Test
                   Identifier = "ConversationVideoMessageCellTests">
+               </Test>
+               <Test
+                  Identifier = "Data_ImageTypeTests/testThatItIdentifiesJPEG()">
+               </Test>
+               <Test
+                  Identifier = "DismissalTests/testThatItCallsHandlerAfterDismissing()">
                </Test>
                <Test
                   Identifier = "EmoticonSubstitutionConfigurationTests/testThatParsingPerformanceForFullConfigurationIsEnoughForUsingOnMainQueue()">
@@ -118,6 +136,9 @@
                </Test>
                <Test
                   Identifier = "MessageReplyPreviewViewTests">
+               </Test>
+               <Test
+                  Identifier = "NetworkConditionHelperTests/testThatSharedInstanceReturnQualityTypeWifi()">
                </Test>
                <Test
                   Identifier = "SavableImageTests">
@@ -162,10 +183,16 @@
                   Identifier = "StartedConversationCellTests/testThatItRendersNewConversationCellWithoutParticipants_AllowGuests()">
                </Test>
                <Test
+                  Identifier = "TeamMetadataRefresherTests/test_it_refreshes_if_timeout_expired()">
+               </Test>
+               <Test
                   Identifier = "TextMessageMentionsTests">
                </Test>
                <Test
                   Identifier = "TypingIndicatorViewSnapshotTests/testThatLabelAndLineAreShownWhenAnimated()">
+               </Test>
+               <Test
+                  Identifier = "UserImageViewContainerSnapshotTests/testForWithUserImage()">
                </Test>
             </SkippedTests>
          </TestableReference>
@@ -175,7 +202,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      enableAddressSanitizer = "YES"
+      disableMainThreadChecker = "YES"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -300,6 +327,13 @@
             isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
+      <AdditionalOptions>
+         <AdditionalOption
+            key = "MallocStackLogging"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

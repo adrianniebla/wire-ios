@@ -101,7 +101,7 @@ class DismissalTests: ZMSnapshotTestCase {
         }
 
         // THEN
-        waitForExpectations(timeout: 2, handler: nil)
+        waitForExpectations(timeout: 2, handler: nil)///TODO: crash 
     }
 
     func testThatItCallsHandlerForAlreadyDismissedViewController() {

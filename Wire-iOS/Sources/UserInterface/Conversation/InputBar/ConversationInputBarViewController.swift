@@ -281,9 +281,9 @@ final class ConversationInputBarViewController: UIViewController,
         fatalError("init(coder:) has not been implemented")
     }
 
-    deinit {
-        NSObject.cancelPreviousPerformRequests(withTarget: self)
-    }
+//    deinit {
+//        NSObject.cancelPreviousPerformRequests(withTarget: self)
+//    }
 
     // MARK: - view life cycle
 

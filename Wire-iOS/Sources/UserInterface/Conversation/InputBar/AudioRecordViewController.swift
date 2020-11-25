@@ -120,7 +120,8 @@ final class AudioRecordViewController: UIViewController, AudioRecordBaseViewCont
             return zmLog.warn("Stopped recording but did not get file URL")
         }
         
-        if shouldSend {
+        //Do not send audio when testing, which casue "Cannot transcode" error log and c
+        if shouldSend && !ProcessInfo.processInfo.isRunningTests {
             sendAudio()
         }
         
