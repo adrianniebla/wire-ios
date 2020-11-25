@@ -232,6 +232,8 @@ extension XCTestCase {
                                      as: .image,
                                      snapshotDirectory: snapshotDirectory(file: file),
                                      file: file, testName: testName, line: line)
+        
+        finishTransactions()
 
         XCTAssertNil(failure, file: file, line: line)
 
@@ -256,6 +258,8 @@ extension XCTestCase {
                                      file: file,
                                      testName: testName,
                                      line: line)
+        
+        finishTransactions()
 
         XCTAssertNil(failure, file: file, line: line)
     }
@@ -273,6 +277,8 @@ extension XCTestCase {
                                      file: file,
                                      testName: testName,
                                      line: line)
+        
+        finishTransactions()
 
         XCTAssertNil(failure, file: file, line: line)
     }
@@ -308,8 +314,15 @@ extension XCTestCase {
                                      file: file,
                                      testName: testName,
                                      line: line)
+        
+        finishTransactions()
 
         XCTAssertNil(failure, file: file, line: line)
+    }
+
+    private func finishTransactions() {
+        // Trigger the run loop in order to finish CA transactions which keeps objects in memory
+        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.01))
     }
 }
 
