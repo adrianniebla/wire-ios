@@ -119,6 +119,8 @@
   "testTargets" : [
     {
       "skippedTests" : [
+        "ContactsDataSourceTests\/testPerformanceExample()",
+        "ConversationImageMessageTests\/testOpaqueImage()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
