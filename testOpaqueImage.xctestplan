@@ -198,7 +198,6 @@
         "ConversationFileMessageTests",
         "ConversationImageMessageTests\/testNotDownloadedImage()",
         "ConversationImageMessageTests\/testObfuscatedImage()",
-        "ConversationImageMessageTests\/testTransparentImage()",
         "ConversationImagesViewControllerTests",
         "ConversationInputBarViewControllerAudioRecorderSnapshotTests",
         "ConversationInputBarViewControllerDelegateTests",
