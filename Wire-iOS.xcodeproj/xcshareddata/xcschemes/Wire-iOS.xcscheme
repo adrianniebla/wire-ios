@@ -49,6 +49,9 @@
          <TestPlanReference
             reference = "container:Testplan/ConversationTextMessageTests.xctestplan">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Testplan/testMediaPreviewAttachment.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
