@@ -119,6 +119,7 @@
   "testTargets" : [
     {
       "skippedTests" : [
+        "ConversationImageMessageTests\/testOpaqueImage()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
