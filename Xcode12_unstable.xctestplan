@@ -228,7 +228,6 @@
         "DeleteMessageTests",
         "DestructionCountdownViewTests",
         "DigitalSignatureVerificationViewControllerTest",
-        "DismissalTests",
         "EmailAdresssValidatorTests",
         "EmoticonSubstitutionConfigurationTests",
         "EmptySearchResultsViewTests",
