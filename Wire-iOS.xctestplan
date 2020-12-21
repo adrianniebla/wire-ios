@@ -120,7 +120,20 @@
     {
       "skippedTests" : [
         "ContactsDataSourceTests\/testPerformanceExample()",
-        "ConversationImageMessageTests\/testOpaqueImage()"
+        "ConversationImageMessageTests\/testOpaqueImage()",
+        "ConversationInputBarViewControllerTests",
+        "ConversationReplyCellTests\/testThatItDisplaysAudioMessage_55()",
+        "ConversationStatusLineTests\/testStatusForMultipleTextMessagesInConversation_LastRename()",
+        "ConversationTextMessageTests",
+        "ConversationVideoMessageCellTests",
+        "Data_ImageTypeTests\/testThatItIdentifiesJPEG()",
+        "LicensesLoaderTests\/testThatItDeletesCacheWhenMemoryWarningIsSent()",
+        "MessageReplyPreviewViewTests\/testThatItRendersAudioMessagePreview()",
+        "NetworkConditionHelperTests\/testThatSharedInstanceReturnQualityTypeWifi()",
+        "SavableImageTests\/testThatAnimatedImageIsSavedAfterOwnerOfSavableImageIsDealloced()",
+        "ShareViewControllerTests",
+        "TextMessageMentionsTests\/testThatItRendersMentions_OnlyMention()",
+        "TypingIndicatorViewSnapshotTests\/testThatLabelAndLineAreShownWhenAnimated()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
