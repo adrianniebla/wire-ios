@@ -229,7 +229,6 @@
         "DestructionCountdownViewTests",
         "DigitalSignatureVerificationViewControllerTest",
         "EmailAdresssValidatorTests",
-        "EmoticonSubstitutionConfigurationTests",
         "EmptySearchResultsViewTests",
         "EphemeralKeyboardViewControllerTests",
         "EphemeralTimeoutFormatterTests",
