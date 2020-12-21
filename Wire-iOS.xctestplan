@@ -135,6 +135,7 @@
         "DecodeImageOperationTests\/testThatItDoesNotDecodeInvalidImageData()",
         "DismissalTests\/testThatItCallsHandlerForAlreadyDismissedViewController()",
         "EmoticonSubstitutionConfigurationTests",
+        "FilePreviewGeneratorTests",
         "LicensesLoaderTests\/testThatItDeletesCacheWhenMemoryWarningIsSent()",
         "MessageReplyPreviewViewTests",
         "MessageReplyPreviewViewTests\/testThatItRendersAudioMessagePreview()",

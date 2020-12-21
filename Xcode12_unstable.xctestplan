@@ -233,7 +233,6 @@
         "EphemeralKeyboardViewControllerTests",
         "EphemeralTimeoutFormatterTests",
         "ExtensionSettingsTests",
-        "FilePreviewGeneratorTests",
         "FolderCreationControllerSnapshotTests",
         "FolderPickerControllerSnapshotTests",
         "FontSchemeTests",
