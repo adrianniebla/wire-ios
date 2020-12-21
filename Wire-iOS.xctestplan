@@ -119,21 +119,30 @@
   "testTargets" : [
     {
       "skippedTests" : [
+        "ArticleViewTests",
         "ContactsDataSourceTests\/testPerformanceExample()",
         "ConversationImageMessageTests\/testOpaqueImage()",
+        "ConversationImageMessageTests\/testTransparentImage()",
         "ConversationInputBarViewControllerTests",
         "ConversationReplyCellTests\/testThatItDisplaysAudioMessage_55()",
+        "ConversationReplyCellTests\/testThatItDisplaysErrorForDeletedMessage_57()",
         "ConversationStatusLineTests\/testStatusForMultipleTextMessagesInConversation_LastRename()",
         "ConversationTextMessageTests",
         "ConversationVideoMessageCellTests",
         "Data_ImageTypeTests\/testThatItIdentifiesJPEG()",
+        "DecodeImageOperationTests\/testThatItDoesNotDecodeInvalidImageData()",
         "LicensesLoaderTests\/testThatItDeletesCacheWhenMemoryWarningIsSent()",
         "MessageReplyPreviewViewTests\/testThatItRendersAudioMessagePreview()",
+        "MessageReplyPreviewViewTests\/testThatItRendersImageMessagePreview()",
         "NetworkConditionHelperTests\/testThatSharedInstanceReturnQualityTypeWifi()",
         "SavableImageTests\/testThatAnimatedImageIsSavedAfterOwnerOfSavableImageIsDealloced()",
+        "SavableImageTests\/testThatImageIsSavedAfterOwnerOfSavableImageIsDealloced()",
         "ShareViewControllerTests",
+        "TeamMetadataRefresherTests\/test_it_refreshes_if_timeout_expired()",
         "TextMessageMentionsTests\/testThatItRendersMentions_OnlyMention()",
-        "TypingIndicatorViewSnapshotTests\/testThatLabelAndLineAreShownWhenAnimated()"
+        "TextMessageMentionsTests\/testThatItRendersMentions_SelfMention_LongText()",
+        "TypingIndicatorViewSnapshotTests\/testThatLabelAndLineAreShownWhenAnimated()",
+        "UserImageViewContainerSnapshotTests\/testForWithUserImage()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
