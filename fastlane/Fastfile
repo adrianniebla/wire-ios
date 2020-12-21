@@ -75,12 +75,13 @@ platform :ios do
         if !xcode_version.nil? 
             xcversion(version: xcode_version)
 
-            if xcode_version == "11.4"
+            ## map ios version to xcode version
+            if xcode_version == "11.4.1"
                 ios_version = "13.4"
-            elsif xcode_version == "11.4.1"
-                ios_version = "13.4.1"
             end
         end
+
+        ### run all tests in test plans
 
         run_tests(
             scheme: "Wire-iOS",
@@ -93,7 +94,23 @@ platform :ios do
             derived_data_path: "DerivedData",
             buildlog_path: "test",
             output_directory: "test",
-            output_types: "junit"
+            output_types: "junit",
+            testplan: "testOpaqueImage"
+        )
+
+        run_tests(
+            scheme: "Wire-iOS",
+            skip_detect_devices: true,
+            configuration: "Debug",
+            test_without_building: true,
+            sdk:"iphonesimulator",
+            destination: "platform=iOS Simulator,name=iPhone 8,OS=#{ios_version}",
+            code_coverage: true,
+            derived_data_path: "DerivedData",
+            buildlog_path: "test",
+            output_directory: "test",
+            output_types: "junit",
+            testplan: "Wire-iOS"
         )
     end
 
