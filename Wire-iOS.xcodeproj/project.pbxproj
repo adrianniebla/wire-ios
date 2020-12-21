@@ -741,6 +741,7 @@
 		A91833132419347F00CBD0B7 /* TokenFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91833122419347F00CBD0B7 /* TokenFieldTests.swift */; };
 		A9235E5A2591635600931BB9 /* ConversationTextMessageTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */; };
 		A9235E60259164A700931BB9 /* testMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */; };
+		A9235E662591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */; };
 		A923F1C02428C12A003F361F /* URLs+zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1BF2428C12A003F361F /* URLs+zip.swift */; };
 		A923F1C72428C71A003F361F /* ZipFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1C42428C572003F361F /* ZipFileTests.swift */; };
 		A923F1C924290325003F361F /* SplitViewControllerTransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1C824290325003F361F /* SplitViewControllerTransitionContext.swift */; };
@@ -2405,6 +2406,7 @@
 		A91833122419347F00CBD0B7 /* TokenFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFieldTests.swift; sourceTree = "<group>"; };
 		A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConversationTextMessageTests.xctestplan; sourceTree = "<group>"; };
 		A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
+		A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testSoundCloudMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
 		A923F1BF2428C12A003F361F /* URLs+zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLs+zip.swift"; sourceTree = "<group>"; };
 		A923F1C42428C572003F361F /* ZipFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipFileTests.swift; sourceTree = "<group>"; };
 		A923F1C824290325003F361F /* SplitViewControllerTransitionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerTransitionContext.swift; sourceTree = "<group>"; };
@@ -5633,6 +5635,7 @@
 		A9235E522591594900931BB9 /* Testplan */ = {
 			isa = PBXGroup;
 			children = (
+				A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */,
 				A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */,
 				A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */,
 				A94592D7258D15CF0019C8F9 /* testOpaqueImage.xctestplan */,
@@ -7104,6 +7107,7 @@
 				EF8DD90A211C840800E970F1 /* 20000x20000.gif in Resources */,
 				7C374E4B1FDE7B8C00A43B9C /* unsplash_matterhorn_small_height.jpg in Resources */,
 				5EBC344420EE5FEF00AFB6DF /* identicon.png in Resources */,
+				A9235E662591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan in Resources */,
 				BFA13E181D4B509A00F0A91B /* unsplash_burger.jpg in Resources */,
 				A94592D8258D15CF0019C8F9 /* testOpaqueImage.xctestplan in Resources */,
 				7C374E4E1FDE7B8C00A43B9C /* unsplash_matterhorn_small_width.jpg in Resources */,

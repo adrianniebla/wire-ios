@@ -52,6 +52,9 @@
          <TestPlanReference
             reference = "container:Testplan/testMediaPreviewAttachment.xctestplan">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Testplan/testSoundCloudMediaPreviewAttachment.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
