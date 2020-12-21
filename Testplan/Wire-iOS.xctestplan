@@ -120,7 +120,8 @@
     {
       "skippedTests" : [
         "ConversationImageMessageTests\/testOpaqueImage()",
-        "ConversationImageMessageTests\/testTransparentImage()"
+        "ConversationImageMessageTests\/testTransparentImage()",
+        "ConversationReplyCellTests\/testThatItDisplaysAudioMessage_55()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",

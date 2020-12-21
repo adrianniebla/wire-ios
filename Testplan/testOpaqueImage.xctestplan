@@ -219,7 +219,6 @@
         "ConversationPingMessageTests",
         "ConversationRenamedCellTests",
         "ConversationReplyCellDescriptionTests",
-        "ConversationReplyCellTests",
         "ConversationStatusLineTests",
         "ConversationStatusLineTests_Muting",
         "ConversationStatusTests",
