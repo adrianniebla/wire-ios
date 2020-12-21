@@ -121,8 +121,10 @@
       "skippedTests" : [
         "ConversationImageMessageTests\/testOpaqueImage()",
         "ConversationImageMessageTests\/testTransparentImage()",
+        "ConversationReplyCellTests",
         "ConversationReplyCellTests\/testThatItDisplaysAudioMessage_55()",
-        "ConversationReplyCellTests\/testThatItDisplaysErrorForDeletedMessage_57()"
+        "ConversationReplyCellTests\/testThatItDisplaysErrorForDeletedMessage_57()",
+        "ConversationReplyCellTests\/testThatItDisplaysErrorForUnsupportedMessageType_57()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
