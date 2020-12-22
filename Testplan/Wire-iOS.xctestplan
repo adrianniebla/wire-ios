@@ -119,6 +119,7 @@
   "testTargets" : [
     {
       "skippedTests" : [
+        "ConversationImageMessageTests",
         "ConversationImageMessageTests\/testOpaqueImage()",
         "ConversationImageMessageTests\/testTransparentImage()",
         "ConversationReplyCellTests",
@@ -126,7 +127,17 @@
         "ConversationReplyCellTests\/testThatItDisplaysErrorForDeletedMessage_57()",
         "ConversationReplyCellTests\/testThatItDisplaysErrorForUnsupportedMessageType_57()",
         "ConversationTextMessageTests",
-        "ConversationVideoMessageCellTests\/testCancelledUploadCell_fromOtherUser()"
+        "ConversationVideoMessageCellTests",
+        "ConversationVideoMessageCellTests\/testCancelledUploadCell_fromOtherUser()",
+        "ConversationVideoMessageCellTests\/testDownloadedCell_fromOtherUser()",
+        "ConversationVideoMessageCellTests\/testDownloadedCell_fromThisDevice()",
+        "ConversationVideoMessageCellTests\/testDownloadedCell_fromThisDevice_NoDuration()",
+        "ConversationVideoMessageCellTests\/testDownloadingCell_fromThisDevice()",
+        "ConversationVideoMessageCellTests\/testFailedDownloadCell_fromOtherUser()",
+        "ConversationVideoMessageCellTests\/testFailedDownloadCell_fromThisDevice()",
+        "ConversationVideoMessageCellTests\/testFailedUploadCell_fromOtherUser()",
+        "ConversationVideoMessageCellTests\/testFailedUploadCell_fromThisDevice()",
+        "ConversationVideoMessageCellTests\/testObfuscatedFileTransferCell()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
