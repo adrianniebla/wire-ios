@@ -58,6 +58,9 @@
          <TestPlanReference
             reference = "container:Testplan/ConversationTextMessageTests/testSoundCloudSetMediaPreviewAttachment.xctestplan">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Testplan/testThatItCallsHandlerAfterDismissing.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

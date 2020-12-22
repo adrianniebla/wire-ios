@@ -110,6 +110,9 @@
       }
     ],
     "mainThreadCheckerEnabled" : false,
+    "mallocStackLoggingOptions" : {
+      "loggingType" : "allAllocations"
+    },
     "targetForVariableExpansion" : {
       "containerPath" : "container:Wire-iOS.xcodeproj",
       "identifier" : "8F42C537199244A700288E4D",
@@ -137,7 +140,8 @@
         "ConversationVideoMessageCellTests\/testFailedDownloadCell_fromThisDevice()",
         "ConversationVideoMessageCellTests\/testFailedUploadCell_fromOtherUser()",
         "ConversationVideoMessageCellTests\/testFailedUploadCell_fromThisDevice()",
-        "ConversationVideoMessageCellTests\/testObfuscatedFileTransferCell()"
+        "ConversationVideoMessageCellTests\/testObfuscatedFileTransferCell()",
+        "DismissalTests\/testThatItCallsHandlerAfterDismissing()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
