@@ -44,19 +44,19 @@
             default = "YES">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:Testplan/testOpaqueImage.xctestplan">
+            reference = "container:Testplan/ConversationImageMessageTests/testOpaqueImage.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:Testplan/ConversationTextMessageTests.xctestplan">
+            reference = "container:Testplan/ConversationTextMessageTests/ConversationTextMessageTests.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:Testplan/testMediaPreviewAttachment.xctestplan">
+            reference = "container:Testplan/ConversationTextMessageTests/testMediaPreviewAttachment.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:Testplan/testSoundCloudMediaPreviewAttachment.xctestplan">
+            reference = "container:Testplan/ConversationTextMessageTests/testSoundCloudMediaPreviewAttachment.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:Testplan/testSoundCloudSetMediaPreviewAttachment.xctestplan">
+            reference = "container:Testplan/ConversationTextMessageTests/testSoundCloudSetMediaPreviewAttachment.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>

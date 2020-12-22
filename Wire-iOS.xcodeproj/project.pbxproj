@@ -5637,14 +5637,30 @@
 		A9235E522591594900931BB9 /* Testplan */ = {
 			isa = PBXGroup;
 			children = (
+				A9235E702591EE2B00931BB9 /* ConversationImageMessageTests */,
+				A9235E6F2591EE1100931BB9 /* ConversationTextMessageTests */,
+				A9A2F7AA257E38680056E083 /* Wire-iOS.xctestplan */,
+			);
+			path = Testplan;
+			sourceTree = "<group>";
+		};
+		A9235E6F2591EE1100931BB9 /* ConversationTextMessageTests */ = {
+			isa = PBXGroup;
+			children = (
 				A9235E692591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan */,
 				A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */,
 				A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */,
 				A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */,
-				A94592D7258D15CF0019C8F9 /* testOpaqueImage.xctestplan */,
-				A9A2F7AA257E38680056E083 /* Wire-iOS.xctestplan */,
 			);
-			path = Testplan;
+			path = ConversationTextMessageTests;
+			sourceTree = "<group>";
+		};
+		A9235E702591EE2B00931BB9 /* ConversationImageMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				A94592D7258D15CF0019C8F9 /* testOpaqueImage.xctestplan */,
+			);
+			path = ConversationImageMessageTests;
 			sourceTree = "<group>";
 		};
 		A923F1C32428C562003F361F /* ZipFile */ = {
