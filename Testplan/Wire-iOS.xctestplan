@@ -122,7 +122,11 @@
         "ConversationImageMessageTests\/testOpaqueImage()",
         "ConversationImageMessageTests\/testTransparentImage()",
         "ConversationReplyCellTests",
-        "ConversationTextMessageTests"
+        "ConversationReplyCellTests\/testThatItDisplaysAudioMessage_55()",
+        "ConversationReplyCellTests\/testThatItDisplaysErrorForDeletedMessage_57()",
+        "ConversationReplyCellTests\/testThatItDisplaysErrorForUnsupportedMessageType_57()",
+        "ConversationTextMessageTests",
+        "ConversationVideoMessageCellTests\/testCancelledUploadCell_fromOtherUser()"
       ],
       "target" : {
         "containerPath" : "container:Wire-iOS.xcodeproj",
