@@ -742,6 +742,7 @@
 		A9235E5A2591635600931BB9 /* ConversationTextMessageTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */; };
 		A9235E60259164A700931BB9 /* testMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */; };
 		A9235E662591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */; };
+		A9235E6A2591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E692591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan */; };
 		A923F1C02428C12A003F361F /* URLs+zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1BF2428C12A003F361F /* URLs+zip.swift */; };
 		A923F1C72428C71A003F361F /* ZipFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1C42428C572003F361F /* ZipFileTests.swift */; };
 		A923F1C924290325003F361F /* SplitViewControllerTransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1C824290325003F361F /* SplitViewControllerTransitionContext.swift */; };
@@ -2407,6 +2408,7 @@
 		A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConversationTextMessageTests.xctestplan; sourceTree = "<group>"; };
 		A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
 		A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testSoundCloudMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
+		A9235E692591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testSoundCloudSetMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
 		A923F1BF2428C12A003F361F /* URLs+zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLs+zip.swift"; sourceTree = "<group>"; };
 		A923F1C42428C572003F361F /* ZipFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipFileTests.swift; sourceTree = "<group>"; };
 		A923F1C824290325003F361F /* SplitViewControllerTransitionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerTransitionContext.swift; sourceTree = "<group>"; };
@@ -5635,6 +5637,7 @@
 		A9235E522591594900931BB9 /* Testplan */ = {
 			isa = PBXGroup;
 			children = (
+				A9235E692591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan */,
 				A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */,
 				A9235E5F259164A700931BB9 /* testMediaPreviewAttachment.xctestplan */,
 				A9235E592591635600931BB9 /* ConversationTextMessageTests.xctestplan */,
@@ -7117,6 +7120,7 @@
 				EF6E3C7A2089F232003F6752 /* animated.gif in Resources */,
 				A9235E60259164A700931BB9 /* testMediaPreviewAttachment.xctestplan in Resources */,
 				BFA13E1C1D4B77C600F0A91B /* unsplash_small.jpg in Resources */,
+				A9235E6A2591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan in Resources */,
 				87656FCF1FB5FEDC00D5286C /* 0x0.pdf in Resources */,
 				1E18C2BF1AFBBB820043F3CF /* emoticons.min.json in Resources */,
 				1E8772281B0C8CAB005BDDC6 /* emo-test-03.json in Resources */,

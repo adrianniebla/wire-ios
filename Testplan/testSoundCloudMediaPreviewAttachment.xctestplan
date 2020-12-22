@@ -226,6 +226,7 @@
         "ConversationStatusTests",
         "ConversationStatusTests_Icon",
         "ConversationSystemMessageTests",
+        "ConversationTextMessageTests\/testSoundCloudSetMediaPreviewAttachment()",
         "ConversationTitleViewTests",
         "ConversationVideoMessageCellTests",
         "ConversationViewControllerSnapshotTests",
