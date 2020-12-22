@@ -125,6 +125,7 @@
         "ConversationImageMessageTests",
         "ConversationImageMessageTests\/testOpaqueImage()",
         "ConversationImageMessageTests\/testTransparentImage()",
+        "ConversationInputBarViewControllerTests",
         "ConversationReplyCellTests",
         "ConversationReplyCellTests\/testThatItDisplaysAudioMessage_55()",
         "ConversationReplyCellTests\/testThatItDisplaysErrorForDeletedMessage_57()",

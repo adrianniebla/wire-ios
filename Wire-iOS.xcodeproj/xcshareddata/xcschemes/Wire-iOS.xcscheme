@@ -61,6 +61,9 @@
          <TestPlanReference
             reference = "container:Testplan/testThatItCallsHandlerAfterDismissing.xctestplan">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Testplan/ConversationInputBarViewControllerTests.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

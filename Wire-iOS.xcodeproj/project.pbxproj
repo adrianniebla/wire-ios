@@ -744,6 +744,7 @@
 		A9235E662591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */; };
 		A9235E6A2591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E692591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan */; };
 		A9235E74259202EA00931BB9 /* testThatItCallsHandlerAfterDismissing.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E73259202E900931BB9 /* testThatItCallsHandlerAfterDismissing.xctestplan */; };
+		A9235E7A25921D0500931BB9 /* ConversationInputBarViewControllerTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A9235E7925921D0500931BB9 /* ConversationInputBarViewControllerTests.xctestplan */; };
 		A923F1C02428C12A003F361F /* URLs+zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1BF2428C12A003F361F /* URLs+zip.swift */; };
 		A923F1C72428C71A003F361F /* ZipFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1C42428C572003F361F /* ZipFileTests.swift */; };
 		A923F1C924290325003F361F /* SplitViewControllerTransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923F1C824290325003F361F /* SplitViewControllerTransitionContext.swift */; };
@@ -2411,6 +2412,7 @@
 		A9235E652591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testSoundCloudMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
 		A9235E692591ED4300931BB9 /* testSoundCloudSetMediaPreviewAttachment.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testSoundCloudSetMediaPreviewAttachment.xctestplan; sourceTree = "<group>"; };
 		A9235E73259202E900931BB9 /* testThatItCallsHandlerAfterDismissing.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testThatItCallsHandlerAfterDismissing.xctestplan; sourceTree = "<group>"; };
+		A9235E7925921D0500931BB9 /* ConversationInputBarViewControllerTests.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConversationInputBarViewControllerTests.xctestplan; sourceTree = "<group>"; };
 		A923F1BF2428C12A003F361F /* URLs+zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLs+zip.swift"; sourceTree = "<group>"; };
 		A923F1C42428C572003F361F /* ZipFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipFileTests.swift; sourceTree = "<group>"; };
 		A923F1C824290325003F361F /* SplitViewControllerTransitionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerTransitionContext.swift; sourceTree = "<group>"; };
@@ -5639,6 +5641,7 @@
 		A9235E522591594900931BB9 /* Testplan */ = {
 			isa = PBXGroup;
 			children = (
+				A9235E7925921D0500931BB9 /* ConversationInputBarViewControllerTests.xctestplan */,
 				A9235E73259202E900931BB9 /* testThatItCallsHandlerAfterDismissing.xctestplan */,
 				A9235E702591EE2B00931BB9 /* ConversationImageMessageTests */,
 				A9235E6F2591EE1100931BB9 /* ConversationTextMessageTests */,
@@ -7130,6 +7133,7 @@
 				7C374E4B1FDE7B8C00A43B9C /* unsplash_matterhorn_small_height.jpg in Resources */,
 				5EBC344420EE5FEF00AFB6DF /* identicon.png in Resources */,
 				A9235E662591662700931BB9 /* testSoundCloudMediaPreviewAttachment.xctestplan in Resources */,
+				A9235E7A25921D0500931BB9 /* ConversationInputBarViewControllerTests.xctestplan in Resources */,
 				BFA13E181D4B509A00F0A91B /* unsplash_burger.jpg in Resources */,
 				A9235E74259202EA00931BB9 /* testThatItCallsHandlerAfterDismissing.xctestplan in Resources */,
 				A94592D8258D15CF0019C8F9 /* testOpaqueImage.xctestplan in Resources */,
